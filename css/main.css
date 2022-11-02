@@ -18,6 +18,9 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -64,10 +67,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100% px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -411,28 +429,62 @@ body {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .features__list {
-  display: flex;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
-  flex-basis: calc((100% - 90px) / 4);
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features__icon {
   display: flex;
   background-color: var(--tertiary-color);
-  width: 270px;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features__icon {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__icon {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -455,6 +507,11 @@ body {
 .work {
   padding-top: 47px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {
@@ -498,29 +555,55 @@ body {
 
 .team {
   background-color: var(--tertiary-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.67;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
   display: flex;
   gap: 30px;
 }
+@media screen and (max-width: 1199px) {
+  .team-list {
+    flex-wrap: wrap;
+  }
+}
 
 .team-item {
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .container-two {
@@ -572,17 +655,28 @@ body {
 }
 
 .regular-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .regular-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .regular-clients-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .regular-clients-title {
+    font-size: 36px;
+  }
 }
 
 .regular-clients-list {
@@ -590,9 +684,14 @@ body {
   gap: 30px;
   justify-content: center;
 }
+@media screen and (max-width: 1199px) {
+  .regular-clients-list {
+    flex-wrap: wrap;
+  }
+}
 
 .regular-clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid var(--text-color-five);
@@ -601,6 +700,16 @@ body {
   justify-content: center;
   fill: var(--text-color-five);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .regular-clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-clients-link {
+    width: 170px;
+  }
 }
 .regular-clients-link:hover, .regular-clients-link:focus {
   border-color: var(--accent-color);
