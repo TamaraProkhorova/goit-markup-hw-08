@@ -15,7 +15,10 @@
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+  }
   }
   .regular-clients-list {
     display: flex;
@@ -26,7 +29,9 @@
     justify-content: center;
   }
   .regular-clients-link {
+    @media screen and (min-width: 480px) {
     width: 210px;
+    }
     @media screen and (min-width: 768px) {
       width: 226px;
     }
