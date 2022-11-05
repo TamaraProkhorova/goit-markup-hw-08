@@ -2,7 +2,7 @@
     background-color: var(--tertiary-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
+    @include media-min (1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -10,7 +10,7 @@
   .team-title {
     font-weight: 700;
     font-size: 28px;
-    @media screen and (min-width: 1200px) {
+    @include media-min (1200px) {
       font-size: 36px;
     }
     line-height: 1.67;
@@ -18,13 +18,13 @@
     color: var(--text-color-two);
     text-align: center;
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include media-min (1200px) {
     margin-bottom: 50px;
     }
   }
   .team-list {
     display: flex;
-    @media screen and (max-width: 1199px) {
+    @include media-max (1199px) {
     flex-wrap: wrap;
   }
     gap: 30px;

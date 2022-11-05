@@ -67,7 +67,7 @@ body {
 }
 
 .container {
-  width: 100% px;
+  width: 100%;
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
@@ -698,6 +698,12 @@ body {
 @media screen and (max-width: 1199px) {
   .regular-clients-list {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .regular-clients-item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
