@@ -10,10 +10,11 @@
   .team-title {
     font-weight: 700;
     font-size: 28px;
+    line-height: 1.17;
     @include media-min (1200px) {
       font-size: 36px;
+      line-height: 1.67;
     }
-    line-height: 1.67;
     letter-spacing: 0.03em;
     color: var(--text-color-two);
     text-align: center;

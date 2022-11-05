@@ -6,15 +6,25 @@
   .footer__logo {
     font-family: var(--minor-font);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    @include media-min (1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+      text-align: unset;
+    }
     letter-spacing: 0.03em;
     color: var(--text-color-one);
     display: block;
     margin-bottom: 20px;
   }
   .address-container {
+    text-align: center;
+    @include media-min (1200px) {
     margin-right: 70px;
+    text-align: unset;
+  }
   }
   .footer-address {
     font-style: normal;
@@ -53,20 +63,33 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
+    @include media-min (1200px) {
+    text-align: unset;
+    }
     text-transform: uppercase;
     color: var(--text-color-one);
     margin-bottom: 20px;
   }
   .container-four {
+    @include media-min (1200px) {
     width: 1200px;
+  }
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
+    gap: 60px;
+    justify-content: center;
+    @include media-max (1199px) {
+      flex-wrap: wrap;
+    }
   }
   .footer-soc-container {
-    margin-right: 93px;
+    @include media-min (1200px) {
+      margin-right: 93px;
+    }
   }
   .footer-soc-list {
     display: flex;
@@ -94,21 +117,31 @@
   .footer-form-input {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    @include media-min (1200px) {
+      flex-direction: row;
+    }
   }
   .footer-input {
+    @include media-max (479px) {
+      min-width: 310px;
+    }
+    min-width: 450px;
+    margin-bottom: 20px;
+    @include media-min (1200px) {
     width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    margin-right: 12px;
     background-color: transparent;
     color: rgba(255, 255, 255,);
   padding-left: 16px;
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }

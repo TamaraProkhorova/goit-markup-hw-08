@@ -574,7 +574,7 @@ body {
 .team-title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
   text-align: center;
@@ -583,6 +583,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team-title {
     font-size: 36px;
+    line-height: 1.67;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -674,7 +675,7 @@ body {
 .regular-clients-title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.67;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -682,6 +683,7 @@ body {
 @media screen and (min-width: 1200px) {
   .regular-clients-title {
     font-size: 36px;
+    line-height: 1.67;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -846,16 +848,30 @@ body {
 .footer__logo {
   font-family: var(--minor-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color-one);
   display: block;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: unset;
+  }
+}
 
 .address-container {
-  margin-right: 70px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
+    text-align: unset;
+  }
 }
 
 .footer-address {
@@ -899,22 +915,41 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--text-color-one);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: unset;
+  }
+}
 
 .container-four {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   display: flex;
   align-items: baseline;
+  gap: 60px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .container-four {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container-four {
+    flex-wrap: wrap;
+  }
 }
 
-.footer-soc-container {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-soc-container {
+    margin-right: 93px;
+  }
 }
 
 .footer-soc-list {
@@ -945,39 +980,51 @@ body {
 .footer-form-input {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    flex-direction: row;
+  }
 }
 
 .footer-input {
-  width: 358px;
+  min-width: 450px;
+  margin-bottom: 20px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
   background-color: transparent;
   color: rgb(255, 255, 255);
   padding-left: 16px;
 }
+@media screen and (max-width: 479px) {
+  .footer-input {
+    min-width: 310px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
 .footer-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
