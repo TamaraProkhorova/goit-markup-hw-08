@@ -12,8 +12,15 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    @include media-min (320px) {
+    width: 310px;
+    }
+    width: 450px;
+    min-height: 609px;
+    @include media-min (1200px) {
     width: 528px;
     min-height: 581px;
+  }
     padding: 40px;
     background: var(--primary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -115,8 +122,12 @@
   margin-bottom: 20px;
   }
   .label-agree {
+    font-size: 12px;
+    line-height: 1.16;
+    @include media-min (1200px) {
     font-size: 14px;
     line-height: 1.17;
+  }
     letter-spacing: 0.03em;
     color: var(--text-color-three);
     margin-bottom: 30px;
@@ -142,8 +153,12 @@
   } 
   }
   .agreement {
+    font-size: 12px;
+    line-height: 1.16;
+    @include media-min (1200px) {
     font-size: 14px;
     line-height: 1.71;
+  }
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: underline;

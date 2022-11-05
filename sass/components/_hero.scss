@@ -19,8 +19,12 @@
   }
   .hero__title {
     font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    @include media-min (1200px) {
     font-size: 44px;
     line-height: 1.36;
+  }
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-color-one);
@@ -47,4 +51,4 @@
       background-color: #188ce8;
     }
   }
- 
+  
