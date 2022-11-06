@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo link" href="#" lang="en"
@@ -53,18 +53,68 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu__open" data-mobile-open><svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+        </svg></button>
       </div>
-    </header> -->
+      <div class="mobile is-hidden" data-mobile>
+        <div class="container">
+          <button type="button" class="menu__close" data-mobile-close><svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg></button>
+          <div class="mobile__top">
+            <ul class="mobile-list list">
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#">Студія</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile__item">
+                <a class="mobile__link link" href="#">Контакти</a>
+              </li>
+          </div>
+          </ul>
+          <div class="mobile__bottom">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          <ul class="mobile-soc">
+            <li class="mobile-soc__item">
+              <a class="mobile-soc__link" href="#">Instagram</a>
+              <span class="mobile-soc__line"></span></li>
+            <li class="mobile-soc__item">
+              <a class="mobile-soc__link" href="#">Twitter</a>
+              <span class="mobile-soc__line"></span></li>
+            <li class="mobile-soc__item">
+              <a class="mobile-soc__link" href="#">Facebook</a>
+              <span class="mobile-soc__line"></span></li>
+            <li class="mobile-soc__item">
+              <a class="mobile-soc__link" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn hero__btn" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
-      </section> -->
-      <!-- <section class="features">
+      </section>
+      <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Наші особливості та переваги</h2>
           <ul class="features__list list">
@@ -117,7 +167,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємося</h2>
@@ -602,6 +652,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
