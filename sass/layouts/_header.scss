@@ -203,7 +203,7 @@ color: var(--text-color-three);
   }
   .mobile-soc__link {
     @include media-max (479px) {
-      font-size: 14px;
+      font-size: 12px;
 line-height: 1.17;
     }
     font-weight: 500;

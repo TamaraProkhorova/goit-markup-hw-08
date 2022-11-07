@@ -556,7 +556,7 @@ body {
 }
 @media screen and (max-width: 479px) {
   .mobile-soc__link {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.17;
   }
 }
