@@ -3,7 +3,7 @@
       openMobileBtn: document.querySelector("[data-mobile-open]"),
       closeMobileBtn: document.querySelector("[data-mobile-close]"),
       mobile: document.querySelector("[data-mobile]"),
-      body: document.querySelector("[body]"),
+      body: document.querySelector("body"),
     };
   
     refs.openMobileBtn.addEventListener("click", toggleMobile);

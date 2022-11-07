@@ -1,7 +1,11 @@
 .hero {
     background-color: #c4c4c4;
+    padding-top: 118px;
+    padding-bottom: 118px;
+@include media-min (1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
     text-align: center;
   }
   .overlay {
@@ -43,11 +47,12 @@
     @include media-min (1200px) {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-color-one);
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
   }

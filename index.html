@@ -53,19 +53,19 @@
             >
           </li>
         </ul>
-        <button type="button" class="menu__open" data-mobile-open><svg width="40" height="40">
+        <button type="button" class="menu__open" data-mobile-open><svg width="24" height="16">
           <use href="./images/symbol-defs.svg#icon-menu-open"></use>
         </svg></button>
       </div>
       <div class="mobile is-hidden" data-mobile>
         <div class="container">
-          <button type="button" class="menu__close" data-mobile-close><svg width="40" height="40">
+          <button type="button" class="menu__close" data-mobile-close><svg width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg></button>
           <div class="mobile__top">
             <ul class="mobile-list list">
               <li class="mobile__item">
-                <a class="mobile__link link" href="#">Студія</a>
+                <a class="mobile__link link current" href="#">Студія</a>
               </li>
               <li class="mobile__item">
                 <a class="mobile__link link" href="./portfolio.html">Портфоліо</a>
@@ -73,17 +73,17 @@
               <li class="mobile__item">
                 <a class="mobile__link link" href="#">Контакти</a>
               </li>
+            </ul>
           </div>
-          </ul>
           <div class="mobile__bottom">
             <ul class="mobile-contacts list">
               <li class="mobile-contacts__item">
-                <a class="mobile-contacts__link link" href="tel:+380961111111"
+                <a class="mobile-contacts__tel link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
               <li class="mobile-contacts__item">
-                <a class="mobile-contacts__link link" href="mailto:info@devstudio.com"
+                <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
@@ -527,7 +527,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container-four container">
+      <div class="container container-four">
         <div class="address-container">
           <a class="footer__logo link" href="#" lang="en"
             ><span class="logo__web">Web</span>Studio</a
@@ -599,8 +599,8 @@
                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
               </svg></button>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
       </div>
     </footer>
