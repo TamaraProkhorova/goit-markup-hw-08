@@ -325,6 +325,14 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 1199px) {
+  .navigation,
+.header__container {
+    justify-content: space-between;
+  }
 }
 
 .logo {
@@ -364,6 +372,11 @@ body {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
+    margin-left: 96px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
     margin-left: 92px;
   }
 }
@@ -444,6 +457,19 @@ body {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1199px) {
+  .mail {
+    max-width: 14px;
+    max-height: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .tel {
+    max-height: 14px;
+  }
+}
+
 .menu__open {
   margin-left: auto;
   background-color: transparent;
@@ -465,12 +491,11 @@ body {
   padding-bottom: 10px;
 }
 .mobile > .container {
-  width: 100%;
   padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: auto;
+}
+
+.mobile__top {
+  margin-bottom: 185px;
 }
 
 .menu__close {

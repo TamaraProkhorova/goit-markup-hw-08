@@ -10,6 +10,11 @@
   .header__container {
     display: flex;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media-max (1199px) {
+    justify-content: space-between;
+  }
   }
   .logo {
     font-family: var(--minor-font);
@@ -40,6 +45,9 @@
     display: none;
     @include media-min (768px) {
     display: flex;
+    margin-left: 96px;
+  }
+  @include media-min (1200px) {
     margin-left: 92px;
   }
   }
@@ -112,6 +120,17 @@
     fill: currentColor;
     margin-right: 10px;
   }
+  .mail {
+    @include media-max (1199px) {
+      max-width: 14px;
+      max-height: 10px;
+    }
+  }
+  .tel {
+    @include media-max (1199px) {
+      max-height: 14px;
+    }
+  }
   .menu__open {
     margin-left: auto;
     background-color: transparent;
@@ -129,13 +148,11 @@
     padding-top: 10px;
     padding-bottom: 10px;
     >.container {
-      width: 100%;
       padding-left: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow: auto;
     }
+  }
+  .mobile__top {
+    margin-bottom: 185px;
   }
   .menu__close {
     margin-left: auto;
