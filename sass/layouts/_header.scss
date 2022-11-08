@@ -6,15 +6,13 @@
     color: var(--text-color-two);
     border-bottom: 1px solid #ececec;
   }
-  .navigation,
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
   .header__container {
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    @include media-max (1199px) {
-    justify-content: space-between;
-  }
   }
   .logo {
     font-family: var(--minor-font);
@@ -45,7 +43,7 @@
     display: none;
     @include media-min (768px) {
     display: flex;
-    margin-left: 96px;
+    margin-left: 87px;
   }
   @include media-min (1200px) {
     margin-left: 92px;
@@ -98,8 +96,12 @@
 }
   .contacts__link {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+      line-height: 1.16;
+    @include media-min (1199px) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
     letter-spacing: 0.02em;
     cursor: pointer;
     color: var(--text-color-three);
