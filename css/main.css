@@ -415,14 +415,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 92px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__contacts {
     display: flex;
     flex-direction: unset;
-    margin-left: auto;
   }
 }
 
@@ -711,9 +710,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
   .features__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 

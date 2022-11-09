@@ -23,8 +23,9 @@
     align-items: center;
   }
   .features__item:not(:last-child) {
-    @include media-max (1200px) {
     margin-bottom: 30px;
+    @include media-min (768px) {
+    margin-bottom: 0;
   }
   }
   .features__icon {
