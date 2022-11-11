@@ -992,8 +992,14 @@ body {
 
 .filter {
   background-color: var(--primary-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn-list {
@@ -1002,10 +1008,25 @@ body {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--text-color-two);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .btn-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-list {
+    justify-content: center;
+  }
 }
 
 .filter-btn {
@@ -1032,6 +1053,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-list {
+    justify-content: unset;
+  }
 }
 
 .container-three {
@@ -1064,6 +1091,12 @@ body {
 }
 .filter-link:hover, .filter-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .filter-image {
